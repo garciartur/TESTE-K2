@@ -12,6 +12,18 @@
 		<input type="file" name="arquivo" required>
 		<input type="submit">
 		</form>
-	</body>
 
+	<?php
+		$arquivo=isset($_FILES['arquivo'])?$_FILES['arquivo']:"";
+
+		if (isset($_FILES['arquivo'])){
+			$nome = $arquivo ['name'];
+			$extperm = ['jpg','jpeg','png'];
+			$tamanho = $arquivo['size'];
+			$extensao = explode ('.' , $nome);
+			$extensao = end($extensao);
+			$renomear = mD5(time());
+		}
+	?>
+	</body>
 </html>
