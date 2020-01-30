@@ -4,16 +4,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Upload multimídia</title>
+		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
 		<header>
-			<div class="caixa">
-				<h1>Upload multimídia</h1>
-			</div>
+				<h1><img src="upload.png"></h1>
+				<p>Upload multimídia</p>
 		</header>
-
+		<div class="caixa">
 		<form method="post" action="" enctype="multipart/form-data">
 		<p class="formulario"><input type="file" name="arquivo" required></p>
 		<p class="formulario">Descrição: <input type="text" name="descricao" required></p>
@@ -33,7 +33,7 @@
 			if (in_array($extensao, $extperm)) {
 				$upload = move_uploaded_file($_FILES['arquivo']['tmp_name'], 'uploads/' .$rename);
 				echo "Parabéns! Seu upload foi efetuado com sucesso.";
-				echo "<div><img src='uploads/$rename' width='150'></div>";
+				echo "<br><br><br><img src='uploads/$rename' width='150'><br><br>";
 				echo $_POST ['descricao'];
 			}
 			else{
@@ -41,5 +41,7 @@
 			}
 		}
 	?>
+
+	</div>
 	</body>
 </html>

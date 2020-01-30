@@ -1,0 +1,50 @@
+body {
+	background:#AED6F1 ;
+}
+
+header{
+	position:relative;
+	width:500px;
+	height:130px;
+	margin:0 auto;
+	top: 0px;
+	left:50px;
+	padding:20px 0;
+}
+
+
+header p{
+	font-family: arial, verdana, sans-serif;
+	text-align:left;
+	font-size:40px;
+	color: white;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:30px;
+	position:absolute;
+	top:30px;
+	left:150px;
+}
+
+.caixa {
+	width:550px;
+	height:450px;
+	background: white;
+	margin:0 auto;
+	border: solid #CCCCCC 5px;
+	border-radius:40px;
+	text-align: center;
+}
+
+form {
+	padding:20px;
+	text-align:center;
+}
+
+.formulario {
+	font-family: arial, verdana, sans-serif;
+	font-size:15px;
+	color:black;
+	text-align:center;
+	padding:15px;
+}
