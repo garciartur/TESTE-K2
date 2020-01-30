@@ -12,6 +12,10 @@ header{
 	padding:20px 0;
 }
 
+header h1{
+    position:absolute;
+    top:0px;
+}
 
 header p{
 	font-family: arial, verdana, sans-serif;
@@ -20,10 +24,11 @@ header p{
 	color: white;
 	font-weight:bold;
 	text-transform:uppercase;
-	padding:30px;
 	position:absolute;
-	top:30px;
+	top:0px;
 	left:150px;
+	margin-bottom:0;
+	margin-top:65px;
 }
 
 .caixa {
@@ -47,4 +52,12 @@ form {
 	color:black;
 	text-align:center;
 	padding:15px;
+}
+
+.copyright {
+	font-family: arial, verdana, sans-serif;
+	text-align:center;
+	font-size:13px;
+	color: white;
+	padding: 10px;
 }

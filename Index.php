@@ -41,7 +41,10 @@
 			}
 		}
 	?>
-
 	</div>
+
+	<footer>
+		<p class="copyright">&copy; Copyright Artur F. Garcia - 2020</p>
+	</footer>
 	</body>
 </html>
